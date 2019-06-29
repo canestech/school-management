@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('role');
             $table->tinyInteger('active');
-            $table->integer('school_id');
+            $table->integer('school_id')->nullable();
             $table->integer('code');//school code Auto generated
             $table->integer('student_code')->unique();//Auto generated
             $table->string('gender')->default('');
