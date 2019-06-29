@@ -30,7 +30,7 @@ class ResultOutput()
 }
 */
 
-\Debugbar::disable();
+/*\Debugbar::disable();*/
 
 Route::get('/', function () {
     return view('welcome');
