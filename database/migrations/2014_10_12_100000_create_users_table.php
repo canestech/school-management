@@ -31,7 +31,7 @@ class CreateUsersTable extends Migration
             $table->text('about')->default('');
             $table->string('pic_path')->default('');
             $table->tinyInteger('verified')->nullable();
-            $table->integer('section_id')->unsigned();
+            $table->integer('section_id')->unsigned()->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
